@@ -1,0 +1,244 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "a@gmail.com",
+      "password": "123456",
+      "first_name": "John",
+      "last_name": "Doe",
+      "createdAt": "2025-07-09T15:00:00Z",
+      "rating": 100,
+      "friends": [
+        2,
+        3
+      ],
+      "avatar": "https://example.com/avatars/john.jpg",
+      "bio": "Люблю историю и программирование"
+    },
+    {
+      "id": "2",
+      "email": "jane.smith@example.com",
+      "password": "password456",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "createdAt": "2025-07-09T16:00:00Z",
+      "rating": 50,
+      "friends": [
+        1
+      ],
+      "avatar": null,
+      "bio": "Увлекаюсь математикой"
+    },
+    {
+      "id": "3",
+      "email": "alice.brown@example.com",
+      "password": "password789",
+      "first_name": "Alice",
+      "last_name": "Brown",
+      "createdAt": "2025-07-09T17:00:00Z",
+      "rating": 20,
+      "friends": [
+        1
+      ],
+      "avatar": null,
+      "bio": null
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "type": "article",
+      "genre": "economics",
+      "title": "Венчурный капитал",
+      "content": {
+        "definition": "Мера времени выполнения алгоритма в зависимости от размера входных данных.",
+        "source": "Introduction to Algorithms, Cormen",
+        "structuredContent": [
+          {
+            "id": "9606ea17-af55-4112-9d11-003499a47512",
+            "type": "Facts",
+            "data": {
+              "items": [
+                "Венчурный капитал часто используется для финансирования стартапов в сфере технологий."
+              ]
+            },
+            "suggested_by": 2
+          },
+          {
+            "id": "example-1",
+            "type": "Example",
+            "data": {
+              "items": [
+                {
+                  "title": "Кейс Airbnb",
+                  "description": "Airbnb получил $20,000 от Y Combinator в 2009 году."
+                }
+              ]
+            }
+          },
+          {
+            "id": "note-1",
+            "type": "Note",
+            "data": {
+              "items": [
+                "Заме ка 1",
+                "Зампе ка 2"
+              ]
+            }
+          }
+        ]
+      },
+      "tags": [
+        "инвестиции",
+        "стартапы"
+      ],
+      "authorId": 1,
+      "createdAt": "2025-07-09T17:40:00+06:00",
+      "suggestions": [
+        {
+          "id": "s1",
+          "content": {
+            "definition": "Suggested text",
+            "context": "",
+            "source": "",
+            "structuredContent": []
+          },
+          "comment": "Предложение от пользователя",
+          "authorId": 2,
+          "status": "pending",
+          "createdAt": "2025-07-09T00:00:00Z"
+        }
+      ],
+      "rating": 4.2,
+      "votes": 10,
+      "isVerified": true
+    },
+    {
+      "id": "2",
+      "type": "termin",
+      "genre": "mathematics",
+      "title": "Временные сложности алгоритмов",
+      "content": {
+        "definition": "Мера времени выполнения алгоритма в зависимости от размера входных данных.",
+        "source": "Introduction to Algorithms, Cormen",
+        "structuredContent": [
+          {
+            "type": "List",
+            "data": {
+              "items": [
+                "O(1) - константное время",
+                "O(log n) - логарифмическое время",
+                "O(n) - линейное время"
+              ]
+            }
+          }
+        ]
+      },
+      "tags": [
+        "алгоритмы",
+        "программирование"
+      ],
+      "authorId": 1,
+      "createdAt": "2025-07-09T17:50:00+06:00",
+      "suggestions": [],
+      "rating": 4.5,
+      "votes": 8,
+      "isVerified": false
+    },
+    {
+      "id": "3",
+      "type": "article",
+      "genre": "culture",
+      "title": "Скандинавия",
+      "content": {
+        "definition": "Историко-культурный регион, включающий Данию, Норвегию, Швецию.",
+        "source": "Britannica",
+        "structuredContent": []
+      },
+      "tags": [
+        "культура",
+        "европа"
+      ],
+      "authorId": 2,
+      "createdAt": "2025-07-09T18:10:00+06:00",
+      "suggestions": [
+        {
+          "id": "s1",
+          "content": {
+            "definition": "Suggested text",
+            "context": "",
+            "source": "",
+            "structuredContent": []
+          },
+          "comment": "Предложение от пользователя",
+          "authorId": 2,
+          "status": "pending",
+          "createdAt": "2025-07-09T00:00:00Z"
+        }
+      ],
+      "rating": 3.8,
+      "votes": 5,
+      "isVerified": true
+    }
+  ],
+  "pullRequests": [
+    {
+      "id": "pr1",
+      "postId": "1",
+      "authorId": 2,
+      "suggestToAdd": [
+        {
+          "type": "Facts",
+          "data": {
+            "items": [
+              "Венчурный капитал часто используется для финансирования стартапов в сфере технологий."
+            ]
+          }
+        }
+      ],
+      "status": "accepted",
+      "createdAt": "2025-07-10T10:00:00Z"
+    }
+  ],
+  "battles": [
+    {
+      "id": "b1",
+      "initiatorId": 1,
+      "opponentId": 2,
+      "questions": [
+        {
+          "id": "q1",
+          "content": "Назови столицу Франции",
+          "type": "test",
+          "answer": "Париж",
+          "timeLimit": 30
+        },
+        {
+          "id": "q2",
+          "content": "Что такое алгоритм?",
+          "type": "test",
+          "answer": null,
+          "timeLimit": 60
+        }
+      ],
+      "status": "active",
+      "createdAt": "2025-07-09T15:45:00Z"
+    },
+    {
+      "id": "b2",
+      "initiatorId": 2,
+      "opponentId": 1,
+      "questions": [
+        {
+          "id": "q3",
+          "content": "Какой год начала Второй мировой войны?",
+          "type": "test",
+          "answer": null,
+          "timeLimit": 30
+        }
+      ],
+      "status": "pending",
+      "createdAt": "2025-07-09T16:45:00Z"
+    }
+  ]
+}
