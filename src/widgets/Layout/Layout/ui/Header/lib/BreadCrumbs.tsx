@@ -1,4 +1,5 @@
 import { Dot } from "lucide-react";
+import { ModeToggle } from "shared/components/ModeToggle";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -24,9 +25,11 @@ const BreadCrumbs = () => {
           <BreadcrumbLink href="/battle/b2">Battle</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/duel">Дуэль с другом</BreadcrumbLink>
+          <BreadcrumbLink href="/duel/b2">Дуэль с другом</BreadcrumbLink>
         </BreadcrumbItem>
       </BreadcrumbList>
+                    <ModeToggle />
+      
     </Breadcrumb>
   );
 };

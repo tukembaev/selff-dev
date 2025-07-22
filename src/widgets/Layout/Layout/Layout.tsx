@@ -20,7 +20,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
       }
     >
       <div className="flex flex-col min-h-screen w-full">
-        <div className="mx-auto w-full">
+        <div className="mx-auto w-full ">
           <BreadCrumbs />
 
           {children}

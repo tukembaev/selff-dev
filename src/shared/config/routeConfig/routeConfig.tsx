@@ -25,7 +25,7 @@ export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.POST]: "/post/:id",
   [AppRoutes.BATTLE]: "/battle/:id",
   [AppRoutes.PROFILE]: "/profile/:id",
-  [AppRoutes.DUEL]: "/duel/",
+  [AppRoutes.DUEL]: "/duel/:id",
 };
 
 export const routeConfig: Record<AppRoutes, RouteObject> = {

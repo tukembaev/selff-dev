@@ -18,7 +18,7 @@ const PostRequest = () => {
       </TabsList>{" "}
       <div className="h-full">
         {" "}
-        <TabsContent value="pull_request">
+        <TabsContent value="pull_request" >
           <PostPullRequest />
         </TabsContent>{" "}
         <TabsContent value="bugs">
